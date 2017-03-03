@@ -1,6 +1,7 @@
 package com.example.android.inclassassignment05_mengqid;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ import static android.R.attr.start;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String INTENT_STUDENT_LIST = "Student List";
     ArrayList<Student> students = new ArrayList<>();
 
     @Override
@@ -89,5 +91,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void profile(View view) {
+        Toast.makeText(this,"Your profile picture is uploading...", Toast.LENGTH_SHORT).show();
+    }
 
 }

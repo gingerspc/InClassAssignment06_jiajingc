@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context="com.example.android.inclassassignment05_mengqid.MainActivity">
 
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,7 +27,7 @@
         android:layout_marginTop="15dp"
         android:text="Welcome to the student information system. Please enter the information below:"
         android:textColor="@android:color/white"
-        android:textSize="18dp"
+        android:textSize="12dp"
         android:textStyle="bold" />
 
     <TextView
@@ -37,7 +38,7 @@
         android:layout_marginTop="10dp"
         android:text="Student Name:"
         android:textColor="#3b6aa0"
-        android:textSize="16dp" />
+        android:textSize="12dp" />
 
     <EditText
         android:id="@+id/name"
@@ -50,7 +51,7 @@
         android:hint="  Please enter student's name here"
         android:padding="5dp"
         android:textColor="@android:color/black"
-        android:textSize="14dp" />
+        android:textSize="8dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -60,7 +61,7 @@
         android:layout_marginTop="10dp"
         android:text="UNI:"
         android:textColor="#3b6aa0"
-        android:textSize="16dp" />
+        android:textSize="12dp" />
 
     <EditText
         android:id="@+id/uni"
@@ -73,12 +74,21 @@
         android:hint="  Please enter student's uni"
         android:padding="5dp"
         android:textColor="@android:color/black"
-        android:textSize="14dp" />
-
+        android:textSize="8dp" />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Upload your profile picture"
+        android:textSize="8dp"
+        android:background="#3b6aa0"
+        android:onClick="profile"
+        android:textColor="@android:color/white"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <TextView
@@ -89,42 +99,46 @@
             android:layout_marginTop="10dp"
             android:text="Gender:"
             android:textColor="#3b6aa0"
-            android:textSize="16dp" />
+            android:textSize="8dp" />
 
         <RadioGroup
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:background="#c9d6e4">
+            android:background="#c9d6e4"
+            android:layout_marginRight="30dp">
 
             <RadioButton
                 android:id="@+id/female"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="8dp"
-                android:layout_marginTop="10dp"
-                android:text="Female" />
+                android:layout_marginTop="3dp"
+                android:text="Female"
+                android:textSize="12dp"/>
 
             <RadioButton
                 android:id="@+id/male"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="10dp"
-                android:text="Male" />
+                android:layout_marginTop="3dp"
+                android:text="Male"
+                android:textSize="12dp"/>
 
             <RadioButton
                 android:id="@+id/other"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="10dp"
-                android:text="Other" />
+                android:layout_marginTop="3dp"
+                android:text="Other"
+                android:textSize="12dp"/>
         </RadioGroup>
 
         <TextView
@@ -135,10 +149,10 @@
             android:layout_marginTop="10dp"
             android:text="Graduate: "
             android:textColor="#3b6aa0"
-            android:textSize="16dp" />
+            android:textSize="8dp" />
 
         <RadioGroup
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:background="#c9d6e4"
             android:layout_marginRight="16dp"
@@ -153,7 +167,8 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:text="Graduated" />
+                android:text="Graduated"
+                android:textSize="12dp"/>
 
             <RadioButton
                 android:id="@+id/not_graduate"
@@ -164,14 +179,15 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:text="Not Yet" />
+                android:text="Not Yet"
+                android:textSize="12dp"/>
         </RadioGroup>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         android:layout_gravity="center">
 
@@ -196,5 +212,6 @@
             android:onClick="results"
             android:text="Records"
             android:textColor="@android:color/white" />
+
     </LinearLayout>
 </LinearLayout>

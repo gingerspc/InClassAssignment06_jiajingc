@@ -47,6 +47,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="#3b6aa0"
+        android:onClick="share"
+        android:text="Share your profile with your friends"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#3b6aa0"
         android:text="Back"
         android:onClick="back"
         android:textColor="@android:color/white"
