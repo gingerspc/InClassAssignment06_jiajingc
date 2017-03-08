@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#96bae4"
     android:orientation="vertical"
-    tools:context="com.example.android.inclassassignment06_jiajingc.MainActivity">
+    tools:context="com.example.android.inclassassignment05_MengqiD.MainActivity">
 
 
     <ImageView
@@ -31,14 +31,27 @@
         android:textSize="12dp"
         android:textStyle="bold"
         android:id="@+id/username_display"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="20dp"
         android:hint="Enter your username here"
         android:id="@+id/new_username"
+
         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:onClick="changeUsername"
+        android:textSize="12dp"
+        android:text="Change"/>
+</LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
